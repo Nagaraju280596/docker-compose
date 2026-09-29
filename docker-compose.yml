@@ -1,0 +1,17 @@
+---
+services:
+  bank:
+    container_name: "bank-container"
+    path: ./bank/
+    ports:
+    - "1111:80"
+  creditcard:
+    container_name: "credit-cont"
+    path: ./creditcard/
+    ports:
+    - "1112:80"
+  debitcard:
+    container_name: "debit-cont"
+    path: ./debitcard/
+    ports:
+    - "1113:80"
