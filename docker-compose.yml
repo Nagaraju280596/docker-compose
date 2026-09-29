@@ -2,16 +2,16 @@
 services:
   bank:
     container_name: bank-container
-    path: ./bank/
+    build: ./bank/
     ports:
       - "1111:80"
   creditcard:
     container_name: credit-cont
-    path: ./creditcard/
+    build: ./creditcard/
     ports:
       - "1112:80"
   debitcard:
     container_name: debit-cont
-    path: ./debitcard/
+    build: ./debitcard/
     ports:
       - "1113:80"
