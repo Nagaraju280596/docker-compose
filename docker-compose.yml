@@ -15,3 +15,8 @@ services:
     build: ./debitcard/
     ports:
       - "1113:80"
+  database:
+    container_name: database-cont
+    build: ./database/
+    expose:
+      - "3306"
